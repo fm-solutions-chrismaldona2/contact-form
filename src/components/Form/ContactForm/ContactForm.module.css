@@ -1,0 +1,33 @@
+.form {
+  margin-block: 2rem;
+  width: min(30rem, 90%);
+  background-color: var(--white);
+  padding: 1.8rem 1.65rem 1.65rem 1.65rem;
+  border-radius: 0.75rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form__body {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.form__title {
+  line-height: 1;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--darker-green);
+}
+
+.form__column {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.form__column > * {
+  flex-grow: 1;
+}

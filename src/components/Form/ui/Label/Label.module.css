@@ -1,0 +1,11 @@
+.label {
+  color: var(--dark);
+  font-size: 0.75rem;
+  line-height: 225%;
+  cursor: pointer;
+}
+
+.label--required__icon {
+  margin-left: 0.3rem;
+  color: var(--green);
+}

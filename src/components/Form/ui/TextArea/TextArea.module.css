@@ -1,0 +1,32 @@
+.textarea {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  box-shadow: inset 0 0 0 0.85px var(--grey);
+  border-radius: 0.35rem;
+  padding: 0.85rem 1.05rem;
+
+  color: var(--dark);
+  font-size: 0.85rem;
+
+  transition: box-shadow 0.35s ease;
+
+  resize: none;
+
+  min-height: 4.15rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.textarea:is(:focus) {
+  box-shadow: inset 0 0 0 0.85px var(--green);
+}
+
+.textarea.error {
+  box-shadow: inset 0 0 0 0.85px var(--red);
+}

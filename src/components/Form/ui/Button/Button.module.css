@@ -1,0 +1,30 @@
+.button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  min-width: 100%;
+  font-size: 0.85rem;
+  font-weight: 400;
+  border-radius: 0.35rem;
+  padding: 0.75rem 1.05rem;
+  transition: background-color 0.75s ease;
+}
+
+.button.green {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.button.green:is(:hover) {
+  background-color: var(--dark-green);
+}
+
+.button.white {
+  background-color: var(--white);
+  color: var(--green);
+  box-shadow: inset 0 0 0 1.25px var(--green);
+}
+
+.button.white:is(:hover) {
+  background-color: #f7f7f7;
+}

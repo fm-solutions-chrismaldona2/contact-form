@@ -1,0 +1,24 @@
+.main {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--light-green);
+}
+
+.developer-info {
+  padding: 1rem;
+  background-color: transparent;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.developer-info a {
+  text-decoration: none;
+  color: var(--green);
+  transition: color 0.35s ease;
+}
+
+.developer-info a:is(:hover, :focus) {
+  color: var(--dark-green);
+}
